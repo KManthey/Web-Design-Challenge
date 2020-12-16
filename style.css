@@ -8,12 +8,11 @@
     padding: 10px;
 }
 
-.custom{
-    height: 600px;
-}
 
-.custom h1{
+.custom h1, .compare h1{
     color: steelblue;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
 }
 
 .tempurature{
