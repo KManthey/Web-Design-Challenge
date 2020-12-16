@@ -18,12 +18,12 @@
 
 <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Latitude</a>
+    <a class="navbar-brand logo text-white" href="#">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -38,10 +38,10 @@
             Plot
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/images/tempurature.html">Max Tempurature</a>
+            <a class="dropdown-item" href="tempurature.html">Max Tempurature</a>
             <a class="dropdown-item" href="humidity.html">Humidity</a>
             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="image/Fig4.png">Wind Speed</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
           </div>
         </li>
       </ul>
@@ -52,26 +52,15 @@
  <! Summary: Latitude vs. X  with Sidebar  Visualizations>
  <!Fig1 with text summary  sidebar with a four clickable images  - should be dynamic
 <!--Bootstrap grid card layout for Comparison Page-->
-<!--row 1 headers-->
-<div class="row row-cols-2 row-cols-md-12">
-  <!--first of 2 columns-->
-  <div class="col-md-8">
-    <h1>Summary: Latitude vs X</h1>
-  </div>
-    <!--second of 2 columns-->
-  <div class="col-md-4">
-    <h1>Visualizations</h1>
-  </div>
-</div>
-
+<div class="container-fluid main-container">
 <!--row 2 cards-->
 <div class="row row-cols-3 row-cols-md-12">
   <!--column 1 of 3 -->
   <!--card 1-->
   <div class="col-md-8">
-    <div class="card">
-    <div class="card-body temp_card">
-    <h5 class="card-title">Max Tempurature</h5>
+    <div class="card custom p-4">
+      <h1>Summary: Latitude vs X</h1>    
+    <div class="card-body temp_card mt-3">
     <img src="images/Fig1.png" class="float-left tempurature" alt="...">
     <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeather API to assemble a datatset of over 500 cities.</p>
     <p class="mt-4">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included: tempurature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
@@ -81,40 +70,26 @@
   </div>
 <!--column 2 of 3 -->
   <!--card 1-->
-  <div class="col-md-2">
-        <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Max Tempurature</h5>
-        <img src="images/Fig1.png" class="card-img-top" alt="...">
+  <div class="col-md-4">
+    <div class="card custom p-4">
+      <h1>Visualizations</h1>   
+    <div class="row d-flex flex-row mt-3">
+      <div class="col-6">
+         <img src="images/Fig1.png" class="img-fluid" alt="...">
       </div>
-    </div>
-    <!--card 2-->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Humidity</h5>
-        <img src="images/Fig2.png" class="card-img-top" alt="...">
+        <div class="col-6">
+                <img src="images/Fig2.png" class="img-fluid" alt="...">
       </div>
-    </div>
-  </div>
-  <!--column 3 of 3 -->
-  <div class="col-md-2">
-  <!--card 3-->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Cloudiness</h5>
-        <img src="images/Fig3.png" class="card-img-top" alt="...">
+      <div class="col-6">
+               <img src="images/Fig3.png" class="img-fluid" alt="...">
       </div>
-    </div>
-  <!--card 4-->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Wind Speed</h5>
-        <img src="images/Fig4.png" class="card-img-top" alt="...">
+      <div class="col-6">
+           <img src="images/Fig4.png" class="img-fluid" alt="...">
         </div>
+      </div>
     </div>
   </div>
 </div>
-
 
 </body>
   </html>
